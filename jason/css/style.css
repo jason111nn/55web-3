@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    user-select: none;
+    color: gray;
+}
+body{
+    width: 1920px;
+    height: 1080px;
+    background-color: rgb(255, 246, 225);
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    background-color: rgb(255, 244, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a{
+        font-size: 2.5vw;
+        color: gray;
+        font-weight: 600;
+        transition: .2s;
+        transition-delay: .01s;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #8888;
+    }
+    img{
+        height: 3vw;
+    }
+}
+#event-info{
+    margin-top: 40px;
+    text-align: center;
+}
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#carousel{
+    width: 900px;
+    min-height: 600px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .carousel-item{
+        width:100%;
+    }
+    img{
+        height: 600px;
+        
+    }
+    .carousel-caption{
+        background-color:rgba(233, 233, 233, 0.779);
+        width: 100%;
+        left: 0;
+    }
+}
+.news-btn{
+    
+    position: absolute;
+}
+.btn{
+    top: 50vh;
+    left: 30vw;
+    padding: 5px;
+    border: 0;
+    background-color: rgb(255, 227, 185);
+}
+.performance-box{
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    img{
+        width: 30vw;
+    }
+}
+form{
+    border-radius: 20px;
+    border: #b69090;
+    background-color: rgb(255, 242, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+    padding: 30px;
+    min-height: 500px;
+    color: aliceblue;
+}
+form>h2{
+    font-weight: 600;
+}
+form>input{
+    width: 75%;
+    font-size: 25px;
+    color: rgb(109, 96, 71);
+    background-color: #0000;
+    border: 0;
+    outline: none;
+    border-bottom: rgb(235, 203, 174) solid 5px;
+    text-align: center;
+}
+form>label{
+    font-size: 24px;
+}
+#drag-box , #userans{
+    width: 75%;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #c7b88f;
+}
+#userans{
+    color: rgb(255, 237, 210);
+    font-weight: 600;
+    font-size: 30px;
+}
+#SearchItem{
+    background-color: #fff9da;
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: #c7b88f solid 3px;
+}
+.drag-item{
+    width: 50px;
+    cursor: move;
+    height: 50px;
+    border: #474967;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #fff9da;
+}
