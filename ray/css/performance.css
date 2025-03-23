@@ -1,0 +1,40 @@
+
+.card {
+    width: 40vw;
+    position: relative;
+
+    img {
+        width: 450px;
+        border-radius: 20px;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+}
+
+#performance\ iformation { top: 100px; }
+#portfolio div { flex-direction: row-reverse; }
+#portfolio {
+    top: -100px;
+    text-align: right;
+
+    label::after { content: " more"; }
+    p {
+        clip-path: inset(0 0 4lh 0);
+        transition: clip-path .2s;
+    }
+    label {
+        position: relative;
+        top: -4lh;
+        transition: top .2s;
+    }
+}
+
+#toggle:checked {
+    ~ p { clip-path: inset(0); }
+    ~ label { top: 0; }
+    ~ label::after { content: " less"; }
+}

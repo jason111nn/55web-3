@@ -1,0 +1,50 @@
+
+#back-button {
+    position: absolute;
+    left: -3em;
+    top: 1em;
+}
+
+main {
+    justify-content: center;
+}
+
+/* .results::-webkit-scrollbar { display: none; } */
+.results {
+    display: grid;
+
+    width:  calc(400px * 3.1);
+    height: calc(200px * 3.1);
+    overflow: auto;
+
+    gap: 10px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 200px);
+
+    div {
+        background: #aaa;
+        border-radius: 20px;
+        position: relative;
+        width: 400px;
+        height: 200px;
+
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+    button {
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        place-content: center;
+        background: #ffffff33;
+        opacity: 0;
+
+        transition: opacity .2s;
+    }
+    button:hover { opacity: 1; }
+}

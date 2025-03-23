@@ -1,0 +1,22 @@
+
+main {
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+input {
+    width: 50ch;
+    font-size: 30px;
+    padding: 5px 1ch;
+    border-radius: 2em;
+}

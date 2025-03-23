@@ -1,0 +1,41 @@
+
+#tabs {
+    z-index: 20;
+    position: relative;
+    left: 3em;
+    top: 2em;
+}
+
+main:not(.active) { display: none; }
+
+dialog {
+    width: 25vw;
+    background: var(--bg);
+    border: 5px solid var(--fg);
+
+    form:nth-of-type(1) {
+        height: auto;
+        display: block;
+    }
+    form::nth-of-type(2) {
+        width: 30vw;
+    }
+}
+
+input[type=file] { display: none; }
+
+main {
+    justify-content: space-evenly;
+}
+
+#content {
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    [type=text] {
+        font-size: 30px;
+    }
+}

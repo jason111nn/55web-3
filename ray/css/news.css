@@ -1,0 +1,31 @@
+
+.carousel, .carousel img { width: 35vw; }
+
+#map img {
+    width: 40vw;
+    clip-path: inset(3px round 20px);
+}
+
+#map { position: relative; }
+#map ul {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    bottom: unset;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    a {
+        position: absolute;
+        font-size: 18px;
+        backdrop-filter: blur(20px);
+    }
+    a:nth-of-type(1) { left: 512px; top: 025px; }
+    a:nth-of-type(2) { left: 040px; top: 185px; }
+    a:nth-of-type(3) { left: 205px; top: 250px; }
+    a:nth-of-type(4) { left: 483px; top: 335px; }
+    a:nth-of-type(5) { left: 273px; top: 406px; }
+}

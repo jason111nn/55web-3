@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./libs/jqueryv3.7.1.js"></script>
+    <script src="./libs/bootstrap.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap.css">
+    <script src="./libs/jquery-uiv1.13.2.js"></script>
+    <link rel="stylesheet" href="./libs/jquery-uiv1.13.2.css">
+    <link rel="stylesheet" href="./libs/fontawesome.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tickets.css">
+    <title>ISOC</title>
+</head>
+<body>
+    <nav>
+        <img id="logo" src="./img/logo.png">
+        <h1 id="site-title">2025 國際交響樂團演奏會(ISOC)</h1>
+        <ul id="navbar">
+            <a tabindex="-1" id="home" href="home.html">Home</a>
+            <a tabindex="-1" id="news" href="news.html">News</a>
+            <a tabindex="-1" id="performance" href="performance.html">Performance</a>
+            <a tabindex="-1" id="tickets" href="tickets.html">Tickets</a>
+            <a tabindex="-1" id="search" href="search.html">Search</a>
+            <a tabindex="-1" id="admin" href="admin.php">Admin</a>
+        </ul>
+    </nav>
+    <hr>
+
+    <main>
+        <form id="ticketsform" method="post" action="./api/post.php">
+            <label for="first">
+                <input placeholder="." type="text" name="first" id="first">
+                <span>First name</span>
+            </label>
+            <label for="last">
+                <input placeholder="." type="text" name="last" id="last">
+                <span>Last name</span>
+            </label>
+            <label for="phone">
+                <input placeholder="." type="text" name="phone" id="phone">
+                <span>Phone</span>
+            </label>
+            <label for="pwd">
+                <input placeholder="." type="text" name="pwd" id="pwd">
+                <span>Password</span>
+            </label>
+            <div id="drag">
+                <span>0</span><span>0</span><span>0</span><span>0</span>
+            </div>
+            <label for="veri">
+                <input placeholder="." type="text" name="veri" id="veri">
+                <span>Verification</span>
+            </label>
+            <div id="btns">
+                <br>
+                <button name="submit">Submit <i class="fas fa-fw fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </main>
+
+    <hr>
+    <footer id="share-info">
+        <img id="fb" src="./img/facebook.png">
+        <p id="footer">Copyright © 2025 ISOC All Rights Reserved</p>
+        <img id="google" src="./img/google.png">
+    </footer>
+
+    <script src="./js/tickets.js"></script>
+</body>
+</html>
